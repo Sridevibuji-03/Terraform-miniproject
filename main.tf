@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket = "terraform-devops-remote-backend"
-    key    = "Terraform-backend/terraform.tfstate"
+    bucket = "mini-dft-project-bucket"
+    key    = "Miniproject/terraform.tfstate"
     region = "us-west-1"
     encrypt = true
   }
