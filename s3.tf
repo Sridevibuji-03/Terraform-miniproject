@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "s3_private1" {
-  bucket = "my-private-s3-bucket-demo123"   # change bucket name (must be globally unique)
+  bucket = "mini-dft-project-bucket"   # change bucket name (must be globally unique)
 
   tags = {
     Name = "${var.project_name}-s3-private1"
