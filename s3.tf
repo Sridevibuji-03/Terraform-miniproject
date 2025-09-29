@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "s3_private1" {
-  bucket = "mini-dft-project-bucket"   # change bucket name (must be globally unique)
+  bucket = "terraform-s3-remote-backend-statefile"   # change bucket name (must be globally unique)
 
   tags = {
     Name = "${var.project_name}-s3-private1"
