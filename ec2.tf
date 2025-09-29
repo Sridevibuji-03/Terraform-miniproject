@@ -1,6 +1,6 @@
 #public ec2
 resource "aws_instance" "ec2-public1" {
-    ami                         = "ami-0e742cca61fb65051"
+    ami                         = "ami-00271c85bf8a52b84"
     instance_type               = var.instance_name
     subnet_id                   = aws_subnet.public_subnet1.id
     key_name                    = "terraform-poc-public-key"
@@ -15,7 +15,7 @@ tags = {
 
 #private ec2
 resource "aws_instance" "ec2-private1" {
-    ami                         = "ami-0e742cca61fb65051"
+    ami                         = "ami-00271c85bf8a52b84"
     instance_type               = var.instance_name
     subnet_id                   = aws_subnet.private_subnet1.id
     key_name                    = "terraform-poc-public-key"
